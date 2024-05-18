@@ -7,23 +7,56 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		74AAD2202BF8A293007CB4D2 /* CheckboxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74AAD21F2BF8A293007CB4D2 /* CheckboxView.swift */; };
+		74AAD2222BF8AAA7007CB4D2 /* TextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74AAD2212BF8AAA7007CB4D2 /* TextFieldView.swift */; };
+		74AAD2242BF8AC18007CB4D2 /* ConfirmationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74AAD2232BF8AC18007CB4D2 /* ConfirmationView.swift */; };
+		74AAD2262BF8B7C8007CB4D2 /* SocialLoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74AAD2252BF8B7C8007CB4D2 /* SocialLoginButton.swift */; };
+		74AAD2282BF8B878007CB4D2 /* SocialLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74AAD2272BF8B878007CB4D2 /* SocialLoginView.swift */; };
 		74DAF3812BF5FB7F00E0969F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DAF3802BF5FB7F00E0969F /* AppDelegate.swift */; };
 		74DAF3832BF5FB7F00E0969F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DAF3822BF5FB7F00E0969F /* SceneDelegate.swift */; };
-		74DAF3852BF5FB7F00E0969F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DAF3842BF5FB7F00E0969F /* ViewController.swift */; };
-		74DAF3882BF5FB7F00E0969F /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 74DAF3872BF5FB7F00E0969F /* Base */; };
+		74DAF3852BF5FB7F00E0969F /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DAF3842BF5FB7F00E0969F /* WelcomeViewController.swift */; };
 		74DAF38A2BF5FB8100E0969F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74DAF3892BF5FB8100E0969F /* Assets.xcassets */; };
 		74DAF38D2BF5FB8100E0969F /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 74DAF38C2BF5FB8100E0969F /* Base */; };
+		74DAF3962BF5FB9E00E0969F /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 74DAF3952BF5FB9E00E0969F /* SnapKit */; };
+		74DAF39D2BF5FF0000E0969F /* TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DAF39C2BF5FF0000E0969F /* TitleView.swift */; };
+		74DAF3A32BF5FF9700E0969F /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 74DAF39F2BF5FF9700E0969F /* Poppins-Medium.ttf */; };
+		74DAF3A42BF5FF9700E0969F /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 74DAF3A02BF5FF9700E0969F /* Poppins-Bold.ttf */; };
+		74DAF3A52BF5FF9700E0969F /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 74DAF3A12BF5FF9700E0969F /* Poppins-SemiBold.ttf */; };
+		74DAF3A62BF5FF9700E0969F /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 74DAF3A22BF5FF9700E0969F /* Poppins-Regular.ttf */; };
+		74DAF3AA2BF6010A00E0969F /* UIFont+CustomFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DAF3A92BF6010A00E0969F /* UIFont+CustomFonts.swift */; };
+		74DAF3AC2BF6011700E0969F /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DAF3AB2BF6011700E0969F /* Device.swift */; };
+		74DAF3AE2BF6012100E0969F /* AuthConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DAF3AD2BF6012100E0969F /* AuthConstants.swift */; };
+		74DAF3B32BF6594A00E0969F /* ReusableFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DAF3B22BF6594A00E0969F /* ReusableFormViewController.swift */; };
+		74DAF3B72BF659D000E0969F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DAF3B62BF659D000E0969F /* MainViewController.swift */; };
+		74DAF3B92BF6716600E0969F /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DAF3B82BF6716600E0969F /* CustomTextField.swift */; };
+		74DAF3C02BF6C88900E0969F /* DividerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DAF3BF2BF6C88900E0969F /* DividerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		74AAD21F2BF8A293007CB4D2 /* CheckboxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckboxView.swift; sourceTree = "<group>"; };
+		74AAD2212BF8AAA7007CB4D2 /* TextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldView.swift; sourceTree = "<group>"; };
+		74AAD2232BF8AC18007CB4D2 /* ConfirmationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationView.swift; sourceTree = "<group>"; };
+		74AAD2252BF8B7C8007CB4D2 /* SocialLoginButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialLoginButton.swift; sourceTree = "<group>"; };
+		74AAD2272BF8B878007CB4D2 /* SocialLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialLoginView.swift; sourceTree = "<group>"; };
 		74DAF37D2BF5FB7F00E0969F /* ios-firebase-auth-example-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-firebase-auth-example-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		74DAF3802BF5FB7F00E0969F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		74DAF3822BF5FB7F00E0969F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		74DAF3842BF5FB7F00E0969F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		74DAF3872BF5FB7F00E0969F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		74DAF3842BF5FB7F00E0969F /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		74DAF3892BF5FB8100E0969F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		74DAF38C2BF5FB8100E0969F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		74DAF38E2BF5FB8100E0969F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74DAF39C2BF5FF0000E0969F /* TitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleView.swift; sourceTree = "<group>"; };
+		74DAF39F2BF5FF9700E0969F /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
+		74DAF3A02BF5FF9700E0969F /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
+		74DAF3A12BF5FF9700E0969F /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
+		74DAF3A22BF5FF9700E0969F /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
+		74DAF3A92BF6010A00E0969F /* UIFont+CustomFonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+CustomFonts.swift"; sourceTree = "<group>"; };
+		74DAF3AB2BF6011700E0969F /* Device.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		74DAF3AD2BF6012100E0969F /* AuthConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthConstants.swift; sourceTree = "<group>"; };
+		74DAF3B22BF6594A00E0969F /* ReusableFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableFormViewController.swift; sourceTree = "<group>"; };
+		74DAF3B62BF659D000E0969F /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		74DAF3B82BF6716600E0969F /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		74DAF3BF2BF6C88900E0969F /* DividerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DividerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74DAF3962BF5FB9E00E0969F /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +90,103 @@
 		74DAF37F2BF5FB7F00E0969F /* ios-firebase-auth-example-app */ = {
 			isa = PBXGroup;
 			children = (
+				74DAF3972BF5FBE000E0969F /* Application */,
+				74DAF3982BF5FBEB00E0969F /* Core */,
+				74DAF3992BF5FBF000E0969F /* Resources */,
+			);
+			path = "ios-firebase-auth-example-app";
+			sourceTree = "<group>";
+		};
+		74DAF3972BF5FBE000E0969F /* Application */ = {
+			isa = PBXGroup;
+			children = (
 				74DAF3802BF5FB7F00E0969F /* AppDelegate.swift */,
 				74DAF3822BF5FB7F00E0969F /* SceneDelegate.swift */,
-				74DAF3842BF5FB7F00E0969F /* ViewController.swift */,
-				74DAF3862BF5FB7F00E0969F /* Main.storyboard */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		74DAF3982BF5FBEB00E0969F /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				74DAF3AD2BF6012100E0969F /* AuthConstants.swift */,
+				74DAF3AB2BF6011700E0969F /* Device.swift */,
+				74DAF3A82BF600E200E0969F /* Extensions */,
+				74DAF3AF2BF6023D00E0969F /* Components */,
+				74DAF3B42BF6598E00E0969F /* Login */,
+				74DAF3B62BF659D000E0969F /* MainViewController.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		74DAF3992BF5FBF000E0969F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				74DAF39E2BF5FF7500E0969F /* Poppins */,
 				74DAF3892BF5FB8100E0969F /* Assets.xcassets */,
 				74DAF38B2BF5FB8100E0969F /* LaunchScreen.storyboard */,
 				74DAF38E2BF5FB8100E0969F /* Info.plist */,
 			);
-			path = "ios-firebase-auth-example-app";
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		74DAF39A2BF5FC0100E0969F /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				74DAF3842BF5FB7F00E0969F /* WelcomeViewController.swift */,
+				74DAF3B22BF6594A00E0969F /* ReusableFormViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		74DAF39B2BF5FEEE00E0969F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				74DAF39C2BF5FF0000E0969F /* TitleView.swift */,
+				74DAF3BF2BF6C88900E0969F /* DividerView.swift */,
+				74AAD2272BF8B878007CB4D2 /* SocialLoginView.swift */,
+				74AAD2212BF8AAA7007CB4D2 /* TextFieldView.swift */,
+				74AAD21F2BF8A293007CB4D2 /* CheckboxView.swift */,
+				74AAD2232BF8AC18007CB4D2 /* ConfirmationView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		74DAF39E2BF5FF7500E0969F /* Poppins */ = {
+			isa = PBXGroup;
+			children = (
+				74DAF3A22BF5FF9700E0969F /* Poppins-Regular.ttf */,
+				74DAF39F2BF5FF9700E0969F /* Poppins-Medium.ttf */,
+				74DAF3A12BF5FF9700E0969F /* Poppins-SemiBold.ttf */,
+				74DAF3A02BF5FF9700E0969F /* Poppins-Bold.ttf */,
+			);
+			path = Poppins;
+			sourceTree = "<group>";
+		};
+		74DAF3A82BF600E200E0969F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				74DAF3A92BF6010A00E0969F /* UIFont+CustomFonts.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		74DAF3AF2BF6023D00E0969F /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				74DAF3B82BF6716600E0969F /* CustomTextField.swift */,
+				74AAD2252BF8B7C8007CB4D2 /* SocialLoginButton.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		74DAF3B42BF6598E00E0969F /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				74DAF39B2BF5FEEE00E0969F /* Views */,
+				74DAF39A2BF5FC0100E0969F /* ViewControllers */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +205,9 @@
 			dependencies = (
 			);
 			name = "ios-firebase-auth-example-app";
+			packageProductDependencies = (
+				74DAF3952BF5FB9E00E0969F /* SnapKit */,
+			);
 			productName = "ios-firebase-auth-example-app";
 			productReference = 74DAF37D2BF5FB7F00E0969F /* ios-firebase-auth-example-app.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +236,9 @@
 				Base,
 			);
 			mainGroup = 74DAF3742BF5FB7F00E0969F;
+			packageReferences = (
+				74DAF3942BF5FB9E00E0969F /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 74DAF37E2BF5FB7F00E0969F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,9 +253,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74DAF3A52BF5FF9700E0969F /* Poppins-SemiBold.ttf in Resources */,
+				74DAF3A32BF5FF9700E0969F /* Poppins-Medium.ttf in Resources */,
 				74DAF38A2BF5FB8100E0969F /* Assets.xcassets in Resources */,
+				74DAF3A62BF5FF9700E0969F /* Poppins-Regular.ttf in Resources */,
 				74DAF38D2BF5FB8100E0969F /* Base in Resources */,
-				74DAF3882BF5FB7F00E0969F /* Base in Resources */,
+				74DAF3A42BF5FF9700E0969F /* Poppins-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +269,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74DAF3852BF5FB7F00E0969F /* ViewController.swift in Sources */,
+				74AAD2202BF8A293007CB4D2 /* CheckboxView.swift in Sources */,
+				74DAF3B92BF6716600E0969F /* CustomTextField.swift in Sources */,
+				74DAF3852BF5FB7F00E0969F /* WelcomeViewController.swift in Sources */,
+				74DAF3B32BF6594A00E0969F /* ReusableFormViewController.swift in Sources */,
+				74DAF3AA2BF6010A00E0969F /* UIFont+CustomFonts.swift in Sources */,
 				74DAF3812BF5FB7F00E0969F /* AppDelegate.swift in Sources */,
+				74DAF3AC2BF6011700E0969F /* Device.swift in Sources */,
+				74AAD2262BF8B7C8007CB4D2 /* SocialLoginButton.swift in Sources */,
+				74AAD2222BF8AAA7007CB4D2 /* TextFieldView.swift in Sources */,
 				74DAF3832BF5FB7F00E0969F /* SceneDelegate.swift in Sources */,
+				74AAD2242BF8AC18007CB4D2 /* ConfirmationView.swift in Sources */,
+				74DAF39D2BF5FF0000E0969F /* TitleView.swift in Sources */,
+				74DAF3AE2BF6012100E0969F /* AuthConstants.swift in Sources */,
+				74DAF3C02BF6C88900E0969F /* DividerView.swift in Sources */,
+				74DAF3B72BF659D000E0969F /* MainViewController.swift in Sources */,
+				74AAD2282BF8B878007CB4D2 /* SocialLoginView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		74DAF3862BF5FB7F00E0969F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				74DAF3872BF5FB7F00E0969F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		74DAF38B2BF5FB8100E0969F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -218,7 +354,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -275,7 +411,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -294,12 +430,10 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QU8K7VX6B7;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "ios-firebase-auth-example-app/Info.plist";
+				INFOPLIST_FILE = "ios-firebase-auth-example-app/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -322,12 +456,10 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QU8K7VX6B7;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "ios-firebase-auth-example-app/Info.plist";
+				INFOPLIST_FILE = "ios-firebase-auth-example-app/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -363,6 +495,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		74DAF3942BF5FB9E00E0969F /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		74DAF3952BF5FB9E00E0969F /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 74DAF3942BF5FB9E00E0969F /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 74DAF3752BF5FB7F00E0969F /* Project object */;
 }
