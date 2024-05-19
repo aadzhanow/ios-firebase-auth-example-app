@@ -81,41 +81,47 @@ final class ReusableFormViewController: UIViewController {
     
     @objc private func confirmButtonTapped() {
         
-        if let email = textFieldView.emailTextField.text, let password = textFieldView.passwordTextField.text {
-            
-            showActivityIndicator()
-            
-            switch currentFormState {
-            case .login:
-                sessionManager.login(email: email, password: password) { success, error in
-                    DispatchQueue.main.async {
-                        if success {
-                            ProgressHUD.dismiss()
-                            print("Login successful")
-                            self.handleLogin()
-                        } else if let error = error {
-                            ProgressHUD.dismiss()
-                            print("Login failed: \(error.localizedDescription)")
-                            self.textFieldView.errorLabel.text = "\(error.localizedDescription)"
-                        }
-                    }
-                }
-            case .register:
-                sessionManager.register(email: email, password: password) { success, error in
-                    DispatchQueue.main.async {
-                        if success {
-                            ProgressHUD.dismiss()
-                            print("Registration successful")
-                            self.handleLogin()
-                        } else if let error = error {
-                            ProgressHUD.dismiss()
-                            print("Registration failed: \(error.localizedDescription)")
-                            self.textFieldView.errorLabel.text = "\(error.localizedDescription)"
-                        }
+        guard let email = textFieldView.emailTextField.text, !email.isEmpty else {
+            textFieldView.errorLabel.text = "Please enter your email"
+            return
+        }
+        
+        guard let password = textFieldView.passwordTextField.text, !password.isEmpty else {
+            textFieldView.errorLabel.text = "Please enter your password"
+            return
+        }
+        
+        showActivityIndicator()
+        
+        switch currentFormState {
+        case .login:
+            sessionManager.login(email: email, password: password) { success, error in
+                DispatchQueue.main.async {
+                    if success {
+                        ProgressHUD.dismiss()
+                        print("Login successful")
+                        self.handleLogin()
+                    } else if let error = error {
+                        ProgressHUD.dismiss()
+                        print("Login failed: \(error.localizedDescription)")
+                        self.textFieldView.errorLabel.text = "\(error.localizedDescription)"
                     }
                 }
             }
-            
+        case .register:
+            sessionManager.register(email: email, password: password) { success, error in
+                DispatchQueue.main.async {
+                    if success {
+                        ProgressHUD.dismiss()
+                        print("Registration successful")
+                        self.handleLogin()
+                    } else if let error = error {
+                        ProgressHUD.dismiss()
+                        print("Registration failed: \(error.localizedDescription)")
+                        self.textFieldView.errorLabel.text = "\(error.localizedDescription)"
+                    }
+                }
+            }
         }
     }
     
