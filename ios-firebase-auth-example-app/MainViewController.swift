@@ -10,6 +10,16 @@ import SnapKit
 
 final class MainViewController: UIViewController {
     
+    let welcomeLabel: UILabel = {
+        let label = UILabel()
+        return label
+    }()
+    
+    let signOutButton: UIButton = {
+        let button = UIButton()
+        return button
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         configureViews()
@@ -25,7 +35,7 @@ final class MainViewController: UIViewController {
 
 extension MainViewController {
     private func configureViews() {
-        view.backgroundColor = .red
+        view.backgroundColor = .white
     }
     
     private func configureConstraints() {

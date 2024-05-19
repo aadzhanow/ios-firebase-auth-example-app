@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7484BA492BF92E85001A7D9A /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7484BA482BF92E85001A7D9A /* CustomButton.swift */; };
 		74AAD2202BF8A293007CB4D2 /* CheckboxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74AAD21F2BF8A293007CB4D2 /* CheckboxView.swift */; };
 		74AAD2222BF8AAA7007CB4D2 /* TextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74AAD2212BF8AAA7007CB4D2 /* TextFieldView.swift */; };
 		74AAD2242BF8AC18007CB4D2 /* ConfirmationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74AAD2232BF8AC18007CB4D2 /* ConfirmationView.swift */; };
@@ -30,9 +31,14 @@
 		74DAF3B72BF659D000E0969F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DAF3B62BF659D000E0969F /* MainViewController.swift */; };
 		74DAF3B92BF6716600E0969F /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DAF3B82BF6716600E0969F /* CustomTextField.swift */; };
 		74DAF3C02BF6C88900E0969F /* DividerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DAF3BF2BF6C88900E0969F /* DividerView.swift */; };
+		74EE6FA12BFA04480060E15C /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 74EE6FA02BFA04480060E15C /* FirebaseAuth */; };
+		74EE6FA32BFA05160060E15C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 74EE6FA22BFA05160060E15C /* GoogleService-Info.plist */; };
+		74EE6FA52BFA06020060E15C /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EE6FA42BFA06020060E15C /* SessionManager.swift */; };
+		74EE6FA82BFA682B0060E15C /* ProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 74EE6FA72BFA682B0060E15C /* ProgressHUD */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7484BA482BF92E85001A7D9A /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		74AAD21F2BF8A293007CB4D2 /* CheckboxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckboxView.swift; sourceTree = "<group>"; };
 		74AAD2212BF8AAA7007CB4D2 /* TextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldView.swift; sourceTree = "<group>"; };
 		74AAD2232BF8AC18007CB4D2 /* ConfirmationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationView.swift; sourceTree = "<group>"; };
@@ -57,6 +63,8 @@
 		74DAF3B62BF659D000E0969F /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		74DAF3B82BF6716600E0969F /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		74DAF3BF2BF6C88900E0969F /* DividerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DividerView.swift; sourceTree = "<group>"; };
+		74EE6FA22BFA05160060E15C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		74EE6FA42BFA06020060E15C /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +72,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74EE6FA82BFA682B0060E15C /* ProgressHUD in Frameworks */,
 				74DAF3962BF5FB9E00E0969F /* SnapKit in Frameworks */,
+				74EE6FA12BFA04480060E15C /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,39 +100,33 @@
 		74DAF37F2BF5FB7F00E0969F /* ios-firebase-auth-example-app */ = {
 			isa = PBXGroup;
 			children = (
-				74DAF3972BF5FBE000E0969F /* Application */,
-				74DAF3982BF5FBEB00E0969F /* Core */,
+				74DAF3802BF5FB7F00E0969F /* AppDelegate.swift */,
+				74DAF3822BF5FB7F00E0969F /* SceneDelegate.swift */,
+				74DAF3A82BF600E200E0969F /* Extensions */,
+				74DAF3B62BF659D000E0969F /* MainViewController.swift */,
+				74DAF3982BF5FBEB00E0969F /* Login */,
 				74DAF3992BF5FBF000E0969F /* Resources */,
 			);
 			path = "ios-firebase-auth-example-app";
 			sourceTree = "<group>";
 		};
-		74DAF3972BF5FBE000E0969F /* Application */ = {
-			isa = PBXGroup;
-			children = (
-				74DAF3802BF5FB7F00E0969F /* AppDelegate.swift */,
-				74DAF3822BF5FB7F00E0969F /* SceneDelegate.swift */,
-			);
-			path = Application;
-			sourceTree = "<group>";
-		};
-		74DAF3982BF5FBEB00E0969F /* Core */ = {
+		74DAF3982BF5FBEB00E0969F /* Login */ = {
 			isa = PBXGroup;
 			children = (
 				74DAF3AD2BF6012100E0969F /* AuthConstants.swift */,
-				74DAF3AB2BF6011700E0969F /* Device.swift */,
-				74DAF3A82BF600E200E0969F /* Extensions */,
+				74EE6FA42BFA06020060E15C /* SessionManager.swift */,
 				74DAF3AF2BF6023D00E0969F /* Components */,
-				74DAF3B42BF6598E00E0969F /* Login */,
-				74DAF3B62BF659D000E0969F /* MainViewController.swift */,
+				74DAF39B2BF5FEEE00E0969F /* Views */,
+				74DAF39A2BF5FC0100E0969F /* ViewControllers */,
 			);
-			path = Core;
+			path = Login;
 			sourceTree = "<group>";
 		};
 		74DAF3992BF5FBF000E0969F /* Resources */ = {
 			isa = PBXGroup;
 			children = (
 				74DAF39E2BF5FF7500E0969F /* Poppins */,
+				74EE6FA22BFA05160060E15C /* GoogleService-Info.plist */,
 				74DAF3892BF5FB8100E0969F /* Assets.xcassets */,
 				74DAF38B2BF5FB8100E0969F /* LaunchScreen.storyboard */,
 				74DAF38E2BF5FB8100E0969F /* Info.plist */,
@@ -166,6 +170,7 @@
 		74DAF3A82BF600E200E0969F /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				74DAF3AB2BF6011700E0969F /* Device.swift */,
 				74DAF3A92BF6010A00E0969F /* UIFont+CustomFonts.swift */,
 			);
 			path = Extensions;
@@ -175,18 +180,10 @@
 			isa = PBXGroup;
 			children = (
 				74DAF3B82BF6716600E0969F /* CustomTextField.swift */,
+				7484BA482BF92E85001A7D9A /* CustomButton.swift */,
 				74AAD2252BF8B7C8007CB4D2 /* SocialLoginButton.swift */,
 			);
 			path = Components;
-			sourceTree = "<group>";
-		};
-		74DAF3B42BF6598E00E0969F /* Login */ = {
-			isa = PBXGroup;
-			children = (
-				74DAF39B2BF5FEEE00E0969F /* Views */,
-				74DAF39A2BF5FC0100E0969F /* ViewControllers */,
-			);
-			path = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +204,8 @@
 			name = "ios-firebase-auth-example-app";
 			packageProductDependencies = (
 				74DAF3952BF5FB9E00E0969F /* SnapKit */,
+				74EE6FA02BFA04480060E15C /* FirebaseAuth */,
+				74EE6FA72BFA682B0060E15C /* ProgressHUD */,
 			);
 			productName = "ios-firebase-auth-example-app";
 			productReference = 74DAF37D2BF5FB7F00E0969F /* ios-firebase-auth-example-app.app */;
@@ -238,6 +237,8 @@
 			mainGroup = 74DAF3742BF5FB7F00E0969F;
 			packageReferences = (
 				74DAF3942BF5FB9E00E0969F /* XCRemoteSwiftPackageReference "SnapKit" */,
+				74EE6F9F2BFA04480060E15C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				74EE6FA62BFA682B0060E15C /* XCRemoteSwiftPackageReference "ProgressHUD" */,
 			);
 			productRefGroup = 74DAF37E2BF5FB7F00E0969F /* Products */;
 			projectDirPath = "";
@@ -258,6 +259,7 @@
 				74DAF38A2BF5FB8100E0969F /* Assets.xcassets in Resources */,
 				74DAF3A62BF5FF9700E0969F /* Poppins-Regular.ttf in Resources */,
 				74DAF38D2BF5FB8100E0969F /* Base in Resources */,
+				74EE6FA32BFA05160060E15C /* GoogleService-Info.plist in Resources */,
 				74DAF3A42BF5FF9700E0969F /* Poppins-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -271,6 +273,7 @@
 			files = (
 				74AAD2202BF8A293007CB4D2 /* CheckboxView.swift in Sources */,
 				74DAF3B92BF6716600E0969F /* CustomTextField.swift in Sources */,
+				74EE6FA52BFA06020060E15C /* SessionManager.swift in Sources */,
 				74DAF3852BF5FB7F00E0969F /* WelcomeViewController.swift in Sources */,
 				74DAF3B32BF6594A00E0969F /* ReusableFormViewController.swift in Sources */,
 				74DAF3AA2BF6010A00E0969F /* UIFont+CustomFonts.swift in Sources */,
@@ -282,6 +285,7 @@
 				74AAD2242BF8AC18007CB4D2 /* ConfirmationView.swift in Sources */,
 				74DAF39D2BF5FF0000E0969F /* TitleView.swift in Sources */,
 				74DAF3AE2BF6012100E0969F /* AuthConstants.swift in Sources */,
+				7484BA492BF92E85001A7D9A /* CustomButton.swift in Sources */,
 				74DAF3C02BF6C88900E0969F /* DividerView.swift in Sources */,
 				74DAF3B72BF659D000E0969F /* MainViewController.swift in Sources */,
 				74AAD2282BF8B878007CB4D2 /* SocialLoginView.swift in Sources */,
@@ -505,6 +509,22 @@
 				minimumVersion = 5.7.1;
 			};
 		};
+		74EE6F9F2BFA04480060E15C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.26.0;
+			};
+		};
+		74EE6FA62BFA682B0060E15C /* XCRemoteSwiftPackageReference "ProgressHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/relatedcode/ProgressHUD.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 14.1.3;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -512,6 +532,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 74DAF3942BF5FB9E00E0969F /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
+		};
+		74EE6FA02BFA04480060E15C /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 74EE6F9F2BFA04480060E15C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		74EE6FA72BFA682B0060E15C /* ProgressHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 74EE6FA62BFA682B0060E15C /* XCRemoteSwiftPackageReference "ProgressHUD" */;
+			productName = ProgressHUD;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

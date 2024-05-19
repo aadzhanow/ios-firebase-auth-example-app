@@ -48,10 +48,12 @@ final class CheckboxView: UIView {
     
     private func configureConstraints() {
         checkboxImageView.snp.makeConstraints { make in
-            make.top.leading.equalToSuperview()
+            make.top.equalToSuperview().inset(16)
+            make.leading.equalToSuperview()
         }
         titleLabel.snp.makeConstraints { make in
-            make.top.trailing.bottom.equalToSuperview()
+            make.top.bottom.equalToSuperview().inset(16)
+            make.trailing.equalToSuperview()
             make.leading.equalTo(checkboxImageView.snp.trailing).offset(12)
         }
     }

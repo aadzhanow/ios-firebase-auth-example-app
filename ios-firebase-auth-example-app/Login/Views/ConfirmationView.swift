@@ -9,15 +9,7 @@ import UIKit
 import SnapKit
 
 final class ConfirmationView: UIView {
-    let confirmButton: UIButton = {
-        let button = UIButton()
-        button.backgroundColor = .customBlue
-        button.titleLabel?.font = .customFont(font: .poppins, style: .medium, size: .s16)
-        button.setTitleColor(.white, for: .normal)
-        button.layer.cornerRadius = 14
-        button.clipsToBounds = true
-        return button
-    }()
+    let confirmButton = CustomButton(title: "")
     
     let infoLabel: UILabel = {
         let label = UILabel()

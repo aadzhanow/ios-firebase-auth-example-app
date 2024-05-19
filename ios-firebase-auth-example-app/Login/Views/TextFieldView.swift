@@ -11,9 +11,11 @@ import SnapKit
 final class TextFieldView: UIView {
     let errorLabel: UILabel = {
         let label = UILabel()
-        label.text = "Error description"
+//        label.text = "Error description"
         label.font = .customFont(font: .poppins, style: .regular, size: .s14)
         label.textColor = .red
+        label.numberOfLines = 0
+        label.lineBreakMode = .byWordWrapping
         return label
     }()
     

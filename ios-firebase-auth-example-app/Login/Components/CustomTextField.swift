@@ -17,6 +17,7 @@ class CustomTextField: UITextField {
     override init(frame: CGRect) {
         super.init(frame: frame)
         commonInit()
+        self.autocorrectionType = .no
     }
     
     required init?(coder aDecoder: NSCoder) {
